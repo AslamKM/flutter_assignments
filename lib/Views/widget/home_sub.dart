@@ -94,7 +94,6 @@ class _HomeSubState extends State<HomeSub> {
                   });
                 },
                 items: [
-                  '2022',
                   '2021',
                   '2020',
                   '2019',
@@ -119,8 +118,6 @@ class _HomeSubState extends State<HomeSub> {
                     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                       content: Text('Please select date and year'),
                     ));
-
-                    
                   } else {
                     BlocProvider.of<DataBloc>(context).add(SearchDataEvent(
                         year: dropDownvaluwe1, state: dropDownvaluwe));
